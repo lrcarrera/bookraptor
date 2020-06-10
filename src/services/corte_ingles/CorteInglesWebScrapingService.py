@@ -97,8 +97,12 @@ class CorteInglesWebScrapingService:
                 else:
                     print(i, ' book escaped')
 
+            # TODO: Lluis,
+            # Quitar la escritura del fichero, y llamar a
+            # BookRepository.persist(books) para introducir en el Elastic una lista con 24 libros (libros por pagina),
+            # puedes utilizar la lista de libros en <books>, o si te es más facil persiste los libros uno a uno, como veas!
             f.close()
-            #return books
+
 
         except PageIdNotFoundError as e:
             raise PageIdNotFoundError

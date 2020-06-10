@@ -28,6 +28,8 @@ class BookRaptorScraper(object):
 
                 corte_ingles_scrap.execute(corte_ingles_url)
 
+                #TODO: Luis, pending to add more scrapy services
+
                 print('Page %d processed' % page_id)
 
             except PageIdNotFoundError as e:

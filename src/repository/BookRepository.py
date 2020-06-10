@@ -6,7 +6,9 @@ class BookRepository:
 
     def __init__(self, conn):
         self.__conn = conn
+        #TODO: Lluis, Add connection to elastic parameters
 
     def persist(self, book: Book):
-        self.__conn.autocommit = False
-        cursor = self.__conn.cursor()
+        #TODO: Lluis, create persist to Elastic method
+        cursor = self.__conn.cursor()#remove line
+
